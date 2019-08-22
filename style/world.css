@@ -1,0 +1,335 @@
+/* Minecraft-like pixely font */
+@font-face {
+	font-family: minecraftia;
+	src: url( 'style/minecraftia.ttf' );
+}
+
+#overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10600;
+  display: none;
+  opacity: 0;
+  
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+div.inventory {
+display: block;
+align-content: center;
+    
+    
+}
+
+/* hide cursor */
+#div {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjbQg61aAAAADUlEQVQYV2P4//8/IwAI/QL/+TZZdwAAAABJRU5ErkJggg=='),
+    url(images/blank.cur),
+    none !important;
+}
+
+/* General page style */
+
+body {
+	height: 100%;
+
+	font-family: minecraftia;
+	font-size: 16px;
+
+	text-shadow: #3f3f3f 2px 2px 0px;
+
+	background: url( 'media/background.png' );
+}
+
+/* Render surface */
+
+#renderSurface {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+/* Material selector */
+
+#materialSelector {
+	position: relative;
+	background: rgba( 0, 0, 0, 0.6 );
+}
+
+#materialSelector tr {
+	height: 48px;
+}
+
+#materialSelector td {
+	width: 48px;
+	margin: 0;
+	padding: 0;
+
+	cursor: pointer;
+
+	opacity: 0.5;
+
+	background: url( 'media/inventory.png' );
+	background-position: 0px 0px;
+}
+
+#materialSelector td:hover {
+	opacity: 1.0;
+}
+
+/* Username input */
+
+#nickname {
+	position: absolute;
+	top: 40%;
+	left: 42%;
+
+	width: 300px;
+
+	cursor: default;
+
+	color: #fff;
+}
+
+#nickname input {
+	width: 100%;
+
+	background: none;
+	border: none;
+	border-bottom: 1px solid #888;
+	outline: none;
+
+	color: white;
+
+	font-family: minecraftia;
+	font-size: 24px;
+}
+
+/* Join information */
+
+#joininfo {
+	position: absolute;
+	top: 42%;
+
+	width: 99%;
+
+	cursor: default;
+
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+}
+
+/* Chatbox */
+
+#chatbox {
+	position: absolute;
+	left: 20px;
+	bottom: 55px;
+
+	width: 200px;
+	height: 500px;
+	overflow: hidden;
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	cursor: default;
+
+	background: rgba( 0, 0, 0, 0.3 );
+	color: white;
+}
+
+#chatbox_text {
+	position: absolute;
+	bottom: 8px;
+
+	text-shadow: none;
+}
+
+#chatbox_entry {
+	position: absolute;
+	left: 20px;
+	bottom: 18px;
+
+	width: 210px;
+	height: 30px;
+
+	padding-left: 10px;
+	padding-bottom: 2px;
+
+	background: rgba( 0, 0, 0, 0.3 );
+	border: none;
+	outline: none;
+
+	color: white;
+	font-family: minecraftia;
+	font-size: 16px;
+}
+
+#player_actions {
+	position: absolute;
+	bottom: 18px;
+    left: 250px;
+
+	width: 1000px;
+	height: 20px;
+
+	padding-left: 10px;
+	padding-bottom: 2px;
+
+	background: rgba( 0, 0, 0, 0.3 );
+	border: none;
+	outline: none;
+
+	color: yellow;
+    font-size: 12px;
+}
+
+/* Crosshair */
+#crosshair {
+    position: absolute;
+    left: 49%;
+    bottom: 49%;
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+}
+
+/* Instructions */
+#instructions {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+
+	width: 200px;
+	height: 250px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	cursor: default;
+
+	background: rgba( 0, 0, 0, 0.3 );
+	color: white;
+	font-size: 12px;
+}
+
+#schematic_upload_label {
+	position: absolute;
+	right: 20px;
+	top: 18px;
+
+	width: 150px;
+	height: 20px;
+    padding-left: 20px;
+
+	background: rgba( 0, 0, 0, 0.3 );
+
+	color: yellow;
+	font-family: minecraftia;
+	font-size: 12px;
+
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+    opacity: 0.8;
+}
+
+#schematic_upload_label:hover {
+    opacity: 1.0;
+}
+
+#gui-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#gui-overlayer {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#hotbar tr {
+	height:50px;
+	margin: 0;
+}
+
+#hotbar td {
+	width: 50px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	opacity: 0.9;
+	background-repeat: no-repeat;
+	background: url( '../resource_packs/default/textures/gui/hotbar_slot.png' );
+	background-size: 100%;
+	
+
+}
+
+#hotbar td:hover {
+	opacity: 0.8;
+}
+
+.item-count {
+	z-index: 10000;
+	font-size: 14px;
+	float: right;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  height: 70px;
+}
+
+#gui-container {
+    display: flex;
+    /*align-items: center;*/
+    padding-top: 100px;
+    justify-content: center;
+    height: 100%;
+}
+
+#gui-slot-container {
+    display: flex;
+    /*align-items: center;*/
+    padding-top: 100px;
+    justify-content: center;
+    height: 100%;
+}
+
+#gui-content {
+
+}
+
+#gui-overlayer {
+
+}

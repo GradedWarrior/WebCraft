@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Worlds</title>
+		<!-- Character encoding -->
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+		<!-- Stylesheet -->
+		<link href="../style/main.css" rel="stylesheet" type="text/css">
+		<link href="../style/menu.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body class="dirt-bg">
+		<div class="worlds">
+			
+			<div class="world-file">
+				<img style="image-rendering: pixelated;" src="../resource_packs/default/textures/gui/default_world.png">
+				<p>World Name</p>
+				<p class="date">Created 8/6/18</p>
+			</div>
+
+		</div>
+
+	</body>
+			<script>
+			const sheet = document.createElement('style');
+  sheet.innerHTML = 'img { image-rendering: pixelated; }';
+
+  document.head.appendChild(sheet);
+
+  for(let i = 0; i < frames.length; ++i) {
+    frames[i].document.head.appendChild(sheet);
+  }
+		</script>
+</html>

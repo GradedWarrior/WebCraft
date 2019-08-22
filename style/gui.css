@@ -1,0 +1,42 @@
+
+#gui-inventory-crafting-container {
+    height: 75px;
+    width: 75px;
+    margin-top: 40px;
+    margin-left: 120px;
+    border:  yellow 1px solid; 
+}
+
+#gui-inventory-crafted-container {
+    height: 32px;
+    width: 32px;
+    margin-top: 40px;
+    margin-left: 150px;
+    border:  yellow 1px solid; 
+}
+
+#gui-inventory-slot-container {
+    height: 115px;
+    width: 363px;
+    top: 289px;
+    border:  yellow 1px solid;
+    position: absolute; 
+}
+
+#gui-inventory-hotbar-slot-container {
+
+    height: 35px;
+    width: 100%;
+    top: 420px;
+    border:  #000 1px solid;
+    position: absolute; 
+}
+
+#gui-container-slot {
+	margin: 2px 1px;
+	width: 36px;
+	height: 32px;
+	border:  red 1px solid;
+	float: left;
+	position: relative;
+}

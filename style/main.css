@@ -1,0 +1,214 @@
+/* Minecraft-like pixely font */
+@font-face {
+	font-family: minecraftia;
+	src: url( 'minecraftia.ttf' );
+}
+
+/* hide cursor */
+#div {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjbQg61aAAAADUlEQVQYV2P4//8/IwAI/QL/+TZZdwAAAABJRU5ErkJggg=='),
+    url(images/blank.cur),
+    none !important;
+}
+
+/* General page style */
+
+body {
+	height: 100%;
+
+	font-family: minecraftia;
+	font-size: 16px;
+
+	text-shadow: #3f3f3f 2px 2px 0px;
+
+	background: url( '../resource_packs/default/GUI/main-background.png' );
+}
+
+ .dirt-bg {
+	height: 100%;
+	
+	font-family: minecraftia;
+	font-size: 16px;
+	width: 100%;
+	text-shadow: #3f3f3f 2px 2px 0px;
+	background: #000;
+	text-shadow: none;
+	background: url( '../resource_packs/default/textures/GUI/background.png' );
+}
+
+/* Render surface */
+
+#renderSurface {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+/* Material selector */
+
+#materialSelector {
+	position: relative;
+	background: rgba( 0, 0, 0, 0.6 );
+}
+
+#materialSelector tr {
+	height: 48px;
+}
+
+#materialSelector td {
+	width: 48px;
+	margin: 0;
+	padding: 0;
+
+	cursor: pointer;
+
+	opacity: 0.5;
+
+	background: url( '../resource_packs/inventory.png' );
+	background-position: 0px 0px;
+}
+
+#materialSelector td:hover {
+	opacity: 1.0;
+}
+
+/* Username input */
+
+#nickname {
+	position: absolute;
+	top: 40%;
+	left: 42%;
+
+	width: 300px;
+
+	cursor: default;
+
+	color: #fff;
+}
+
+#nickname input {
+	width: 100%;
+
+	background: none;
+	border: none;
+	border-bottom: 1px solid #888;
+	outline: none;
+
+	color: white;
+
+	font-family: minecraftia;
+	font-size: 24px;
+}
+
+/* Join information */
+
+#joininfo {
+	position: absolute;
+	top: 42%;
+
+	width: 99%;
+
+	cursor: default;
+
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+}
+
+/* Chatbox */
+
+#chatbox {
+	position: absolute;
+	left: 20px;
+	bottom: 55px;
+
+	width: 200px;
+	height: 500px;
+	overflow: hidden;
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	cursor: default;
+
+	background: rgba( 0, 0, 0, 0.3 );
+	color: white;
+}
+
+#chatbox_text {
+	position: absolute;
+	bottom: 8px;
+
+	text-shadow: none;
+}
+
+#chatbox_entry {
+	position: absolute;
+	left: 20px;
+	bottom: 18px;
+
+	width: 210px;
+	height: 30px;
+
+	padding-left: 10px;
+	padding-bottom: 2px;
+
+	background: rgba( 0, 0, 0, 0.3 );
+	border: none;
+	outline: none;
+
+	color: white;
+	font-family: minecraftia;
+	font-size: 16px;
+}
+
+#player_actions {
+	position: absolute;
+	bottom: 18px;
+    left: 250px;
+
+	width: 1000px;
+	height: 20px;
+
+	padding-left: 10px;
+	padding-bottom: 2px;
+
+	background: rgba( 0, 0, 0, 0.3 );
+	border: none;
+	outline: none;
+
+	color: yellow;
+    font-size: 12px;
+}
+
+/* Crosshair */
+#crosshair {
+    position: absolute;
+    left: 49%;
+    bottom: 49%;
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+}
+
+/* Instructions */
+#instructions {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+
+	width: 200px;
+	height: 250px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	cursor: default;
+
+	background: rgba( 0, 0, 0, 0.3 );
+	color: white;
+	font-size: 12px;
+}
