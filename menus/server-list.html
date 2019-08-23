@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WebCraft</title>
+
+		<!-- Character encoding -->
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+		<!-- Stylesheet -->
+		<link href="../style/main.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body oncontextmenu="return false" class="dirt-bg">
+		<!-- Server IP box -->
+		<div id="nickname">
+			<span>Server IP:</span><br />
+			<input id="nickname_input" type="text" maxlength="15" spellcheck="false" onkeypress="if ( keyEvent.keyCode != 13 ) return; localStorage.setItem('server-ip', this.value.trim());" />
+		</div>
+	</body>
+</html>

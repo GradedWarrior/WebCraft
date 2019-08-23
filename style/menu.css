@@ -61,7 +61,7 @@ user-select: none; /* Standard */
 a.btn:hover {
 background: transparent url(../resource_packs/default/textures/gui/button.png) repeat-x;
 background-position: bottom left;
-color: #ffffa0;
+color: #9cffdc;
 outline: none;
 text-decoration: none;
 }
@@ -79,6 +79,16 @@ div.worlds {
     background: rgba( 0, 0, 0, 0.5 );
 
 }
+
+div.menu {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    height: 100%;
+    background: rgba( 0, 0, 0, 0.5 );
+}
+
+
 .world-file {
   margin: auto;
   width: 60%;

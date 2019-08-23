@@ -21,7 +21,7 @@
 		<script src="js/network.js" type="text/javascript"></script>
 	</head>
 
-	<body oncontextmenu="return false">
+	<body oncontextmenu="return false" class="dirt-bg">
 		<!-- Render surface -->
 		<canvas id="renderSurface" style="visiblity: hidden"></canvas>
 
@@ -106,7 +106,7 @@
 
 				// Create client and attempt connection
 				client = new Client( io );
-				client.connect( location.origin, nickname );
+				client.connect( localStorage.getItem('server-ip'), nickname );
 
 				// Update connection status
 				client.on( "connect", function()
